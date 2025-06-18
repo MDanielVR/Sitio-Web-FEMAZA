@@ -36,12 +36,12 @@
                         class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                         <li>
                             <a href="nosotros.html"
-                                class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                                class="block py-2 px-3 rounded md:p-0 text-blue-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
                                 La empresa
                             </a>
                         </li>
                         <li>
-                            <a href="servicios.html"
+                            <a href="prodserv.html"
                                 class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
                                 Productos y servicios
                             </a>
@@ -61,12 +61,12 @@
                     class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                     <li>
                         <a href="nosotros.html"
-                            class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                            class="block py-2 px-3 rounded md:p-0 text-white bg-blue-700 md:bg-transparent md:hover:text-blue-700">
                             La empresa
                         </a>
                     </li>
                     <li>
-                        <a href="servicios.html"
+                        <a href="prodserv.html"
                             class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
                             Productos y servicios
                         </a>
@@ -83,69 +83,66 @@
     </nav>
 </header>
 
-<!-- Reseña histórica -->
-<section class="relative bg-cover bg-center bg-no-repeat text-white py-16 px-6" style="background-image: url('img/historia.jpg');">
-  <div class="absolute inset-0 bg-black opacity-50"></div>
-  <div class="relative z-10 max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">Reseña histórica</h2>
-    <p class="text-lg leading-relaxed">
-      La empresa INGENIERÍA & CONSTRUCCIÓN FEMAZA S.A.C. fue constituida oficialmente el 28 de octubre del año 2020,
-      bajo el RUC 20606115083. Desde sus inicios, FEMAZA S.A.C. ha mostrado un crecimiento sostenido en el sector construcción,
-      gracias a su enfoque estratégico y al liderazgo de su gerente general, el Sr. Segundo Samuel Chavarry Malimba.
-      Entre sus principales hitos se encuentran la ejecución de obras viales y de saneamiento de impacto regional, la diversificación
-      hacia proyectos industriales y la implementación de sistemas de gestión de calidad en sus procesos.
-      Estos logros han posicionado a la empresa como un actor confiable dentro del rubro de la construcción en el Perú.
-    </p>
-  </div>
-</section>
+    <section class="relative bg-cover bg-center bg-no-repeat text-white py-16 px-6" style="background-image: url('{{ asset('img/historia.jpg') }}');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Reseña histórica</h2>
+            <p class="text-lg leading-relaxed">
+                La empresa INGENIERÍA & CONSTRUCCIÓN FEMAZA S.A.C. fue constituida oficialmente el 28 de octubre del año 2020,
+                bajo el RUC 20606115083. Desde sus inicios, FEMAZA S.A.C. ha mostrado un crecimiento sostenido en el sector construcción,
+                gracias a su enfoque estratégico y al liderazgo de su gerente general, el Sr. Segundo Samuel Chavarry Malimba.
+                Entre sus principales hitos se encuentran la ejecución de obras viales y de saneamiento de impacto regional, la diversificación
+                hacia proyectos industriales y la implementación de sistemas de gestión de calidad en sus procesos.
+                Estos logros han posicionado a la empresa como un actor confiable dentro del rubro de la construcción en el Perú.
+            </p>
+        </div>
+    </section>
 
-<!-- Misión y visión -->
-<section class="py-16 px-6 bg-white">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-    <div class="text-center md:text-left">
-      <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-center">Misión</h3>
-      <p class="text-gray-700 leading-relaxed">
-        Brindar servicios de construcción de obras civiles, públicas y privadas con altos estándares de calidad, eficiencia y cumplimiento,
-        superando las expectativas de nuestros clientes mediante un equipo humano comprometido, el uso de tecnología moderna y el respeto por el medio ambiente.
-      </p>
-    </div>
-    <div class="text-center md:text-left">
-      <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-center">Visión</h3>
-      <p class="text-gray-700 leading-relaxed">
-        Ser una empresa constructora líder a nivel nacional, reconocida por la calidad, seguridad y sostenibilidad de nuestras obras,
-        contribuyendo al desarrollo urbano e infraestructura del país con innovación y responsabilidad social.
-      </p>
-    </div>
-  </div>
-</section>
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-center">Misión</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Brindar servicios de construcción de obras civiles, públicas y privadas con altos estándares de calidad, eficiencia y cumplimiento,
+                    superando las expectativas de nuestros clientes mediante un equipo humano comprometido, el uso de tecnología moderna y el respeto por el medio ambiente.
+                </p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-center">Visión</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Ser una empresa constructora líder a nivel nacional, reconocida por la calidad, seguridad y sostenibilidad de nuestras obras,
+                    contribuyendo al desarrollo urbano e infraestructura del país con innovación y responsabilidad social.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
 <footer class="bg-gray-900 text-white py-8">
-  <div class="max-w-screen-xl mx-auto px-4">
-    <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-4 text-center md:text-left">
-      <div class="flex-shrink-0">
-        <img src="img/logo.ico" alt="Logo Femaza" class="h-20 md:h-24">
-      </div>
-      <div>
-        <h2 class="text-lg font-bold mb-1">INGENIERÍA & CONSTRUCCIÓN FEMAZA S.A.C.</h2>
-        <p class="leading-tight">Trujillo (Perú)</p>
-        <p class="leading-tight">Teléfonos: 915335678</p>
-        <p class="leading-tight">
-          Mail: <a href="mailto:femaza2830@gmail.com" class="underline hover:text-blue-400">femaza2830@gmail.com</a>
-        </p>
-      </div>
+    <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-4 text-center md:text-left">
+            <div class="flex-shrink-0">
+                <img src="img/logo.ico" alt="Logo Femaza" class="h-20 md:h-24">
+            </div>
+
+            <div>
+                <h2 class="text-lg font-bold mb-1">INGENIERÍA & CONSTRUCCIÓN FEMAZA S.A.C.</h2>
+                <p class="leading-tight">Trujillo (Perú)</p>
+                <p class="leading-tight">Teléfonos: 915335678</p>
+                <p class="leading-tight">Mail: <a href="mailto:femaza2830@gmail.com" class="underline hover:text-blue-400">femaza2830@gmail.com</a></p>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
-
 <footer class="bg-gray-800 text-gray-300 py-4">
-  <div class="max-w-screen-xl mx-auto px-4 text-center text-sm">
-    <span class="block">
-      © INGENIERIA & CONSTRUCCION FEMAZA S.A.C. 2025 — Página web desarrollada por
-      <span class="text-yellow-400">Daniel & Eduardo</span>
-    </span>
-  </div>
-</footer>
-
+    <div class="max-w-screen-xl mx-auto px-4 text-center text-sm">
+        <span class="block">
+            © INGENIERIA & CONSTRUCCION FEMAZA S.A.C. 2025 —
+            Página web desarrollada por
+            <span class="text-yellow-400">
+                Daniel & Eduardo
+            </span>
+        </span>
+    </div>
+</footer> 
 </body>
 </html>
