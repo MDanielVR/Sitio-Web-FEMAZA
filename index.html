@@ -6,27 +6,83 @@
   <title>INGENIERÍA & CONSTRUCCIÓN FEMAZA S.A.C.</title>
   <link rel="icon" href="img/logo.ico" type="image/x-icon"/>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
+<header>
     <nav class="bg-white border-b border-gray-200">
-      <div class="max-w-screen-xl flex items-center mx-auto p-4">
-        <a href="/" class="flex items-center">
-          <img src="img/logoG.png" class="h-20 md:h-24 lg:h-32" alt="Logo"/>
-        </a>
-        <div class="ml-auto">
-          <ul class="flex space-x-6">
-            <li><a href="index.html" class="text-gray-900 hover:text-blue-700">Inicio</a></li>
-            <li><a href="nosotros.html" class="text-gray-900 hover:text-blue-700">La empresa</a></li>
-            <li><a href="servicios.html" class="text-gray-900 hover:text-blue-700">Productos y servicios</a></li>
-            <li><a href="contacto.html" class="text-gray-900 hover:text-blue-700">Contacto</a></li>
-          </ul>
+        <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="img/logoG.png" class="h-20 md:h-24 lg:h-32" alt="Logo" />
+            </a>
+
+            <div class="flex items-center ml-auto space-x-10">
+                <div class="flex items-center space-x-4 md:hidden">
+                    <button data-collapse-toggle="navbar-menu" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-menu" aria-expanded="false">
+                        <span class="sr-only">Abrir menú</span>
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden w-full md:block md:w-auto">
+                    <ul
+                        class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <a href="nosotros.html"
+                                class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                                La empresa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicios.html"
+                                class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                                Productos y servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contacto.html"
+                                class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hidden md:hidden w-full md:block md:w-auto" id="navbar-menu">
+                <ul
+                    class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <a href="nosotros.html"
+                            class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                            La empresa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicios.html"
+                            class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                            Productos y servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html"
+                            class="block py-2 px-3 rounded md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
 
   <!-- HERO -->
   <section class="relative bg-cover bg-center h-400px" style="background-image: url('img/fondo.jpg')">
@@ -64,31 +120,6 @@
           </p>
         </div>
         <div><img src="img/objetivo2.jpg" alt="FEMAZA Construcción" class="w-full h-64 object-cover rounded-lg shadow-md"/></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="bg-gray-100 py-12 px-4">
-    <div class="max-w-8xl mx-auto mb-12">
-      <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Contacto</h2>
-      <div class="grid md:grid-cols-2 gap-20 items-center">
-        <div class="space-y-6">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">Datos de contacto</h3>
-          <ul class="text-lg text-gray-600 space-y-1">
-            <li>📞 915335678 / 959966216</li>
-            <li>✉️ femaza2830@gmail.com · smalimba@hotmail.com</li>
-            <li>📍 Urb. California, Víctor Larco, Trujillo, La Libertad</li>
-          </ul>
-          <iframe src="https://www.google.com/maps/embed?pb=..." class="w-full h-64 md:h-80 rounded-lg shadow" style="border:0;" loading="lazy"></iframe>
-        </div>
-        <div class="flex flex-col justify-center space-y-10 md:h-full">
-          <div>
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">Presencia geográfica</h3>
-            <p class="text-gray-600 mb-3">📍 Mz. 33 lote 11, Pueblo San José – Pacasmayo, La Libertad</p>
-            <iframe src="https://www.google.com/maps/embed?pb=..." class="w-full h-64 md:h-80 rounded-lg shadow" style="border:0;" loading="lazy"></iframe>
-          </div>
-        </div>
       </div>
     </div>
   </section>
